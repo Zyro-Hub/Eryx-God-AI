@@ -1,21 +1,22 @@
 {
   "name": "eryx-god-ai",
   "version": "1.0.0",
+  "description": "Eryx AI WhatsApp Bot by Prashant Pandey",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "engines": {
-    "node": "18.x"
+    "node": "18.x",
+    "npm": "9.x"
   },
   "dependencies": {
-    "axios": "^1.13.2",
-    "fs-extra": "^11.3.2",
-    "groq-sdk": "^0.35.0",
-    "node-fetch": "^2.6.7",
+    "axios": "^1.6.8",
+    "fs-extra": "^11.2.0",
     "p-limit": "^7.2.0",
     "p-retry": "6.1.3",
     "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "^1.34.2"
+    "whatsapp-web.js": "^1.21.0",
+    "node-fetch": "^2.6.7"
   }
 }
