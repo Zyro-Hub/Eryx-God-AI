@@ -10,8 +10,8 @@
 const { Client, LocalAuth, MessageMedia } = require("whatsapp-web.js");
 const axios = require("axios");
 const qrcode = require("qrcode-terminal");
-const pRetry = require("p-retry").default;
-const pLimit = require("p-limit").default;
+const pRetry = require("p-retry"); // use v6 of p-retry for require()
+const pLimit = require("p-limit");  // works with require()
 const fs = require("fs-extra");
 const path = require("path");
 const {
@@ -19,6 +19,7 @@ const {
     updateUserMemory,
     updateGroupMemory
 } = require("./memory_manage");
+
 
 // ---------------- CONFIG ----------------
 const GEMINI_MODEL = "gemini-2.0-flash";
